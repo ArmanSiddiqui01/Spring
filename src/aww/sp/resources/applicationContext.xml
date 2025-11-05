@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean class="aww.sp.beans.Address" id="address">
+            <property name="house" value="ironMan"/>
+            <property name="room" value="12"/>
+            <property name="pinCode" value="4211"/>
+        </bean>
+    <bean class="aww.sp.beans.Student" id="std" autowire="byName">
+        <property name="name" value="deepak"/>
+        <property name="rollNo" value="1"/>
+    </bean>
+</beans>
